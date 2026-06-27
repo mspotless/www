@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import NewsletterSignup from './NewsletterSignup';
 
 const columns = [
   {
@@ -76,6 +77,10 @@ export default function Footer() {
                 })}
               </div>
             ))}
+
+            <div className="min-w-[280px] flex-1">
+              <NewsletterSignup compact />
+            </div>
 
             <div className="flex max-w-[260px] flex-col gap-3">
               <span className="font-mono text-[10px] font-semibold tracking-[1.5px] text-outline">
